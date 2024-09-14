@@ -1,0 +1,19 @@
+.roott{
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.main-grid-item {
+  height: calc(100vh - 90px);
+  margin-top: 90px;
+  margin-left: 20px;
+  overflow: auto;
+}
+.topbar-sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1000; 
+  height: 60px;
+  width: 100vw;
+}

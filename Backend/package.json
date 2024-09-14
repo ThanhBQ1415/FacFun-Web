@@ -1,0 +1,31 @@
+{
+  "name": "nodejs-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {},
+  "keywords": [],
+  "author": "Ives van Hoorne",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cloudinary": "^2.2.0",
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "2.8.5",
+    "dotenv": "16.4.5",
+    "express": "4.19.2",
+    "express-session": "^1.18.0",
+    "md5": "^2.3.0",
+    "mongoose": "^8.3.4",
+    "multer": "^1.4.5-lts.1",
+    "nodejs-sandbox": "file:",
+    "streamifier": "^0.1.1"
+  }
+}
