@@ -84,7 +84,7 @@ router.post(
 // [get] /api/user/list
 router.get(
   "/list", 
-  (req, res, next) => auth.hasSessionRecord(req,res,next),
+  // (req, res, next) => auth.hasSessionRecord(req,res,next),
   async (request, response) => {
     try {
       const users = await User.find().select("_id last_name first_name");
