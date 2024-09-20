@@ -5,16 +5,6 @@
         "src": "index.js",
         "use": "@vercel/node"
       }
-    ],
-    "routes": [
-      { "handle": "filesystem" },
-      {
-        "src": "routes/(.*)",
-        "dest": "routes/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/index.js"
-      }
     ]
+    
   }
