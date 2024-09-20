@@ -67,7 +67,7 @@ router.post(
 // [post] /api/user/logout 
 router.post(
   "/logout", 
-  (req, res, next) => auth.hasSessionRecord(req,res,next),
+  // (req, res, next) => auth.hasSessionRecord(req,res,next),
   async (request, response)=>{
     response.clearCookie('user_id');
     request.session.destroy(err => {
@@ -97,7 +97,7 @@ router.get(
 // [get] /api/user/:id 
 router.get(
   "/:id", 
-  (req, res, next) => auth.hasSessionRecord(req,res,next),
+  // (req, res, next) => auth.hasSessionRecord(req,res,next),
   async (request, response) => {
     try {
       const id = request.params.id;

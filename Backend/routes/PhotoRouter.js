@@ -11,7 +11,7 @@ const auth = require("../middleware/auth.middleware")
 // [post] /api/photo/new
 router.post(
   "/new", 
-  (req, res, next) => auth.hasSessionRecord(req,res,next),
+  // (req, res, next) => auth.hasSessionRecord(req,res,next),
   upload.single('photo'),
   (req, res, next) => uploadCloud.upload(req, res, next),
   async (request, response) => {
@@ -34,7 +34,7 @@ router.post(
 // [post] /api/photo/commentsOfPhoto/:photo_id
 router.post(
   "/commentsOfPhoto/:photo_id", 
-  (req, res, next) => auth.hasSessionRecord(req,res,next),
+  // (req, res, next) => auth.hasSessionRecord(req,res,next),
   async (request, response) => {
     console.log(request.body)
     const photo = await Photo.findOne({_id: request.body.photo_id})
@@ -62,7 +62,7 @@ router.post(
 // [get] /api/photo/photosOfUser/:id 
 router.get(
   "/photosOfUser/:id", 
-  (req, res, next) => auth.hasSessionRecord(req,res,next),
+  // (req, res, next) => auth.hasSessionRecord(req,res,next),
   async (request, response) => {
     try {
       const id = request.params.id;
