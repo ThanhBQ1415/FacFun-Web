@@ -1,4 +1,4 @@
-const api = "https://fac-fun.vercel.app/"
+const api = "https://fac-fun.vercel.app"
 
 const sysVar = {
     api: api,
