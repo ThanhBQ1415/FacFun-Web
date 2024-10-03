@@ -6,7 +6,7 @@ Add your [configuration](https://codesandbox.io/docs/projects/learn/setting-up/t
 
 ## How does this work?
 
-We run `yarn start` to start an HTTP server that runs on http://localhost:8080. You can open new or existing devtools with the + button next to the devtool tabs.
+We run `yarn start` to start an HTTP server that runs on http://localhost:8081. You can open new or existing devtools with the + button next to the devtool tabs.
 
 ## Resources
 
