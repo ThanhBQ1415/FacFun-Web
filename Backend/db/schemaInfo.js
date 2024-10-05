@@ -13,7 +13,5 @@ const schemaInfo = new mongoose.Schema({
  */
 const SchemaInfo = mongoose.model("SchemaInfo", schemaInfo);
 
-/**
- * Make this available to our application.
- */
+
 module.exports = SchemaInfo;
